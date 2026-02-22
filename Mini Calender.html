@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calender</title>
+    <link rel="stylesheet" href="Zoho.css">
+    
+   </head>
+<body>
+    <div class="cal">
+        <p id="month">December</p>
+        <p id="day">sunday</p>
+        <p id="date">2</p>
+        <p id="year">2025</p>
+    </div>
+</body>
+<script>
+    let today = new Date();
+    let months = [
+      "January","February","March","April","May","June",
+      "July","August","September","October","November","December"
+    ];
+    let days = [
+      "Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"
+    ];
+    document.getElementById("month").innerText = months[today.getMonth()];
+    document.getElementById("day").innerText = days[today.getDay()];
+    document.getElementById("date").innerText = today.getDate();
+    document.getElementById("year").innerText = today.getFullYear();
+  </script>
+
+</html>
